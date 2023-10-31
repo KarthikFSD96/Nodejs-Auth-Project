@@ -1,0 +1,56 @@
+<div class="row mt-5">
+  <div class="col-md-6 m-auto">
+    <div class="card card-body text-center">
+
+      <!-- Registration Icon -->
+      <h1 class="mb-3">
+        <img src="https://cdn-icons-png.flaticon.com/512/3456/3456426.png" alt="icon" width="20%" height="20%"/>
+      </h1>
+
+      <!-- Registration Header -->
+      <h2>
+        Register New User
+      </h2>
+
+      <!-- Include error/success messages -->
+      <%- include ("./messages") %>
+
+      <!-- Input field for name with placeholder and value -->
+      <form action="/auth/register" method="POST">
+        <div class="form-group">
+          <label for="name" class="input-label">Enter Name</label>
+          <input type="name" id="name" name="name" class="form-control" placeholder="Your Name"
+            value="<%= typeof name != 'undefined' ? name : '' %>" />
+        </div>
+
+        <!-- Input field for email with placeholder and value -->
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" class="form-control" placeholder="Enter Email"
+            value="<%= typeof email != 'undefined' ? email : '' %>" />
+        </div>
+
+        <!-- Input field for password with placeholder and value -->
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" class="form-control" placeholder="Enter Password"
+            value="<%= typeof password != 'undefined' ? password : '' %>" />
+        </div>
+
+        <!-- Input field for confirming password with placeholder and value -->
+        <div class="form-group">
+          <label for="password2">Confirm Password</label>
+          <input type="password" id="password2" name="password2" class="form-control" placeholder="Confirm Password"
+            value="<%= typeof password2 != 'undefined' ? password2 : '' %>" />
+        </div>
+        <!-- Submit button for registration form -->
+        <button type="submit" class="btn btn-primary btn-block">
+          Register
+        </button>
+      </form>
+      
+      <!-- Link to the login page for existing users -->
+      <p class="mt-4">Already have an account? <a href="/auth/login">Login</a></p>
+    </div>
+  </div>
+</div>

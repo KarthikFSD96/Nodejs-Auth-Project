@@ -1,0 +1,23 @@
+<div class="row mt-5"> <!-- Start of a Bootstrap row with top margin -->
+    <div class="col-md-6 m-auto"> <!-- A centered column within the row -->
+        <div class="card card-body text-center"> <!-- Bootstrap card for styling -->
+            <h1 class="mb-3">
+                <img src="https://cdn-icons-png.flaticon.com/512/6146/6146586.png" alt="icon" width="20%" />
+            </h1>
+            <h2>
+                Forgot Password <!-- Heading for the "Forgot Password" section -->
+            </h2>
+            <%- include ("./messages") %> <!-- Including messages (possibly flash messages) -->
+            <form action="/auth/forgot" method="POST"> <!-- Form for password reset request -->
+                <div class="form-group">
+                    <label for="email">Email</label> <!-- Label for the email input field -->
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Enter Email" /> <!-- Email input field -->
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Reset password</button> <!-- Submit button -->
+            </form>
+            <p class="mt-4">
+                Remember your password? <a href="/auth/login">Login</a> <!-- Link to the login page -->
+            </p>
+        </div>
+    </div>
+</div>

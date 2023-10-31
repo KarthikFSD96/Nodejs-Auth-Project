@@ -1,0 +1,52 @@
+<div class="row mt-5">
+    <div class="col-md-6 m-auto">
+        <div class="card card-body text-center">
+            <h1 class="mb-3">
+                <!-- Icon representing the login form -->
+                <img src="https://static-00.iconduck.com/assets.00/user-login-icon-487x512-xx4t1c61.png" alt="icon" width="20%" height="20%"/>
+            </h1>
+            
+            <!-- Heading indicating the purpose of the page -->
+            <h2>
+                Login
+            </h2>
+            
+            <!-- Including messages or notifications -->
+            <%- include ("./messages") %>   
+
+            <!-- Login form with POST method -->
+            <form action="/auth/login" method="POST">
+                
+
+                <div class="form-group">
+                    <!-- Label for the email input field -->
+                    <label for="email">Email</label>
+                    <!-- Email input field -->
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Enter your Email adress here.." />
+                    
+                </div>
+
+                <div class="form-group">
+                    <!-- Label for the password input field --> 
+                    <label for="password">Password</label>
+                    <!-- Password input field -->
+                    <input type="password" id="password" name="password" class="form-control" placeholder="Enter your Password here.."/>
+                    <!-- Password input field -->
+                </div>
+                <!-- Login button -->
+                <button type="submit" class="btn btn-primary btn-block">Login</button>
+                
+            </form>
+            
+            <!-- Link to the registration page for new users -->
+            <p class="mt-4">
+                New User? <a href="/auth/register">Register</a>
+            </p>
+            
+            <!-- Link to the password reset page -->
+            <p>
+                Forgot Password? <a href="/auth/forgot">Reset</a>
+            </p>
+        </div>
+    </div>
+</div>

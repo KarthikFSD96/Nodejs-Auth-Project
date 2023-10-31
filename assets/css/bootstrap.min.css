@@ -1,0 +1,97 @@
+/* Global Styles */
+body {
+  background-color: #000; 
+  font-family: 'Times New Roman', serif; 
+  margin: 0;
+  padding: 0;
+}
+
+/* Container Styles */
+.container {
+  background-color: hsl(0, 0%, 50%); 
+  border-radius: 10px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+  margin: 50px auto;
+  max-width: 350px;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Header Styles */
+h1 {
+  color: #FF6600; 
+  font-size: 30px; 
+  margin-bottom: 40px;
+}
+
+/* Input Styles */
+input[type="email"],
+input[type="password"] {
+  background-color: #333; 
+  border: 1px solid #111; 
+  border-radius: 3px;
+  margin-bottom: 10px;
+  padding: 10px 12px;
+  width: 90%;
+  color: #FF6600; 
+}
+
+/* Button Styles */
+button {
+  background-color: #FF6600; 
+  border: none;
+  border-radius: 3px;
+  color: #000; 
+  cursor: pointer;
+  font-size: 16px; 
+  font-weight: 600;
+  margin-top: 10px;
+  padding: 10px;
+  width: 50%;
+}
+
+/* Button Icon Styles */
+.button-icon {
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 20px 20px;
+  padding-left: 30px;
+}
+
+/* Button Hover Styles */
+button:hover {
+  background-color: #FF4400; 
+}
+
+/* Link Styles */
+a {
+  color: #FF6600;
+  text-decoration: none;
+}
+
+/* Input Label Styles */
+.input-label {
+  font-weight: bold;
+  font-size: 20px; 
+  color: #FF6600;
+  margin-bottom: 5px;
+}
+
+/* Form Control Styles */
+.form-control {
+  background-color: #333; 
+  border: 1px solid #111; 
+  border-radius: 5px;
+  margin-bottom: 15px;
+  padding: 12px;
+  width: 90%;
+  font-size: 18px;
+  transition: border-color 0.3s ease;
+}
+
+/* Form Control Focus Styles */
+.form-control:focus {
+  outline: none;
+  border-color: #FF6600;
+  box-shadow: 0 0 5px rgba(255, 102, 0, 0.5); 
+}
