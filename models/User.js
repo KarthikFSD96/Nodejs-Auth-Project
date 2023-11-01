@@ -1,3 +1,4 @@
+// Import required modules
 const mongoose = require('mongoose');
 
 // Define the User Schema

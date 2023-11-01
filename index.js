@@ -1,3 +1,4 @@
+// Import required modules
 const express = require('express');
 const expressLayouts = require('express-ejs-layouts');
 const mongoose = require('mongoose');
